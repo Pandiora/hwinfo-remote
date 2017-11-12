@@ -1,0 +1,286 @@
+{
+    "layout": {
+        "type": "layout",
+        "pages": ["generalPage", "graphicsPage", "remoteSettingsPage"],
+        "generalPage": {
+            "type": "page",
+            "title": "General",
+            "sections": ["generalSection"]
+        },
+        "graphicsPage": {
+            "type": "page",
+            "title": "Graph Settings",
+            "sections": ["graphicsSection"]
+        },
+        "advancedGraphicsPage": {
+            "type": "page",
+            "title": "Advanced Graph Settings",
+            "sections": ["advancedGraphicsSection"]
+        },
+        "remoteSettingsPage": {
+            "type": "page",
+            "title": "Remote Settings",
+            "sections": ["remoteSettingsSection"]
+        },
+        "generalSection": {
+            "type": "section",
+            "title": "General",
+            "keys": [
+                "host-type",
+                "host-name",
+                "host-url",
+                "host-user",
+                "host-password",
+                "update-interval",
+                "temperature-unit"
+            ]
+        },
+        "graphicsSection": {
+            "type": "section",
+            "title": "Graph Settings",
+            "keys": [
+                "show-elements",
+                "line-width",
+                "txt-color",
+                "cpu-color",
+                "gpu-color",
+                "brd-color",
+                "icon-padding-x",
+                "icon-padding-y",
+                "cpu-shortname",
+                "cpu-shortword",
+                "gpu-shortname",
+                "gpu-shortword",
+                "brd-shortname",
+                "brd-shortword"
+            ]
+        },
+        "remoteSettingsSection": {
+            "type": "section",
+            "title": "Remote-Control Settings",
+            "keys": [
+                "host-mac",
+                "wol-package",
+                "wake-text",
+                "wake-icon",
+                "wake-command",
+                "reboot-text",
+                "reboot-icon",
+                "reboot-command",
+                "shutdown-text",
+                "shutdown-icon",
+                "shutdown-command"
+            ]
+        }
+    },
+    "host-name": {
+        "type": "entry",
+        "default": "Server: Remote-Control",
+        "description": "Submenu-Title"
+    },
+    "host-type": {
+        "type": "combobox",
+        "default": "Windows",
+        "options": {
+            "Windows": "Windows",
+            "Linux": "Linux"
+        },
+        "description": "Host OS"
+    },
+    "host-url": {
+        "type": "entry",
+        "default": "127.0.0.1:55555",
+        "description": "Host URL"
+    },
+    "host-user": {
+        "type": "entry",
+        "default": "",
+        "description": "Host User"
+    },
+    "host-password": {
+        "type": "entry",
+        "default": "",
+        "description": "Host Password"
+    },
+    "update-interval": {
+        "type": "spinbutton",
+        "default": 5000,
+        "min": 100,
+        "max": 86400000,
+        "step": 50,
+        "units": "milliseconds",
+        "description": "Update interval"
+    },
+    "icon-padding-x": {
+        "type": "scale",
+        "default": 2,
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "description": "Icon Padding Horizontal"
+    },
+    "icon-padding-y": {
+        "type": "scale",
+        "default": 2,
+        "min": 0,
+        "max": 30,
+        "step": 1,
+        "description": "Icon Padding Vertical"
+    },
+    "temperature-unit": {
+        "type": "combobox",
+        "default": "°C",
+        "options": {
+            "°C": "°C",
+            "°F": "°F",
+            "K": "K"
+        },
+        "description": "Temperature Unit"
+    },
+    "txt-color": {
+        "type": "colorchooser",
+        "default": "rgba(255,255,255,0.7)",
+        "description": "Icon Text Color"
+    },
+    "show-elements": {
+        "type": "combobox",
+        "default": 1,
+        "options": {
+            "Text and Graph": 1,
+            "Text only": 2,
+            "Graph only": 3,
+            "Small Text and Graph": 4,
+            "Small Text only": 5,
+            "Small Graph only": 6,
+            "Minimal Graph only": 9
+        },
+        "description": "Display Settings"
+    },
+    "line-width": {
+        "type": "scale",
+        "default": 1,
+        "min": 0,
+        "max": 5,
+        "step": 0.5,
+        "description": "Line Width"
+    },
+    "cpu-color": {
+        "type": "colorchooser",
+        "default": "rgba(0,128,0,1)",
+        "description": "Color for CPU-Graph"
+    },
+    "gpu-color": {
+        "type": "colorchooser",
+        "default": "rgba(255,1,1,1)",
+        "description": "Color for GPU-Graph"
+    },
+    "brd-color": {
+        "type": "colorchooser",
+        "default": "rgba(0,0,255,1)",
+        "description": "Color for Motherboard-Graph"
+    },
+    "cpu-shortname": {
+        "type": "entry",
+        "default": "CPU",
+        "description": "Shortname for CPU"
+    },
+    "cpu-shortword": {
+        "type": "combobox",
+        "default": "CPU Package",
+        "options": {
+            "CPU Package": "CPU Package",
+            "CPU GT Cores (Graphics)": "CPU GT Cores (Graphics)",
+            "CPU IA Cores": "CPU IA Cores"
+        },
+        "description": "CPU Keyword (Windows)"
+    },
+    "gpu-shortname": {
+        "type": "entry",
+        "default": "GPU",
+        "description": "Shortname for GPU"
+    },
+    "gpu-shortword": {
+        "type": "combobox",
+        "default": "GPU Thermal Diode",
+        "options": {
+            "GPU Thermal Diode": "GPU Thermal Diode",
+            "GPU VRM Temperature1": "GPU VRM Temperature1",
+            "GPU VRM Temperature2": "GPU VRM Temperature2"
+        },
+        "description": "GPU Keyword (Windows)"
+    },
+    "brd-shortname": {
+        "type": "entry",
+        "default": "BRD",
+        "description": "Shortname for Motherboard"
+    },
+    "brd-shortword": {
+        "type": "combobox",
+        "default": "PCH Temperature",
+        "options": {
+            "PCH Temperature": "PCH Temperature",
+            "Motherboard": "Motherboard"
+        },
+        "description": "Motherboard Keyword (Windows)"
+    },
+    "host-mac": {
+        "type": "entry",
+        "default": "00:00:00:00:00:00",
+        "description": "Host Mac-Address"
+    },
+    "wol-package": {
+        "type": "combobox",
+        "default": "wakeonlan",
+        "options": {
+            "WakeOnLan": "wakeonlan",
+            "WOL": "wol",
+            "etherwake": "etherwake"
+        },
+        "description": "WOL-Package"
+    },
+    "wake-text": {
+        "type": "entry",
+        "default": "Wake Host",
+        "description": "Menu Text for 1st Menu-Entry"
+    },
+    "wake-icon": {
+        "type": "iconfilechooser",
+        "default": "network-transmit-receive",
+        "description": "Icon for 1st Menu-Entry"
+    },
+    "wake-command": {
+        "type": "entry",
+        "default": "",
+        "description": "Command for 1st Menu-Entry"
+    },
+    "reboot-text": {
+        "type": "entry",
+        "default": "Reboot Host",
+        "description": "Menu Text for 2nd Menu-Entry"
+    },
+    "reboot-icon": {
+        "type": "iconfilechooser",
+        "default": "view-refresh",
+        "description": "Icon for 2nd Menu-Entry"
+    },
+    "reboot-command": {
+        "type": "entry",
+        "default": "",
+        "description": "Command for 2nd Menu-Entry"
+    },
+    "shutdown-text": {
+        "type": "entry",
+        "default": "Shutdown Host",
+        "description": "Menu Text for 3rd Menu-Entry"
+    },
+    "shutdown-icon": {
+        "type": "iconfilechooser",
+        "default": "system-shutdown",
+        "description": "Icon for 3rd Menu-Entry"
+    },
+    "shutdown-command": {
+        "type": "entry",
+        "default": "",
+        "description": "Command for 3rd Menu-Entry"
+    }
+}

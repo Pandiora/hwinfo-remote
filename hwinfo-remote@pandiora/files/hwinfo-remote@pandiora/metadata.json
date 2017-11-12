@@ -1,0 +1,17 @@
+{
+	"multiversion": true,
+    "uuid": "hwinfo-remote@pandiora",
+    "name": "Remote Temperature-Monitor", 
+    "description": "Displays chosen temperatures of Remote-PC and adds Remote-Controls",
+    "cinnamon-version": [
+        "2.8", 
+        "3.0", 
+        "3.2", 
+        "3.4", 
+        "3.6"
+    ],
+    "max-instances": "1",
+    "dangerous": true,
+    "version": "0.18",
+    "role": "panellauncher"
+}
