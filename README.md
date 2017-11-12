@@ -1,6 +1,6 @@
 # hwinfo-remote
 
-This Applet aims to provide a little graph with temeperatures and a context-menu including fast-to-use remote-controls.
+This Applet aims to provide a little graph with temperatures and a context-menu including fast-to-use remote-controls.
 
 ## Getting Started
 
