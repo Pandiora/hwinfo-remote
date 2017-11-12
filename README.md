@@ -25,6 +25,6 @@ You can select between different appearances:
 - ![](https://raw.githubusercontent.com/Pandiora/hwinfo-remote/master/hwinfo-remote%40pandiora/files/hwinfo-remote%40pandiora/screenshots/taskbar-7.png)
 
 You can adjust a wide range of settings:
-- ![](https://raw.githubusercontent.com/Pandiora/hwinfo-remote/master/hwinfo-remote%40pandiora/files/hwinfo-remote%40pandiora/screenshots/hwrm-remote.png)
-- ![](https://raw.githubusercontent.com/Pandiora/hwinfo-remote/master/hwinfo-remote%40pandiora/files/hwinfo-remote%40pandiora/screenshots/hwrm-graph.png)
-- ![](https://raw.githubusercontent.com/Pandiora/hwinfo-remote/master/hwinfo-remote%40pandiora/files/hwinfo-remote%40pandiora/screenshots/hwrm-general.png)
+![](https://raw.githubusercontent.com/Pandiora/hwinfo-remote/master/hwinfo-remote%40pandiora/files/hwinfo-remote%40pandiora/screenshots/hwrm-remote.png)
+![](https://raw.githubusercontent.com/Pandiora/hwinfo-remote/master/hwinfo-remote%40pandiora/files/hwinfo-remote%40pandiora/screenshots/hwrm-graph.png)
+![](https://raw.githubusercontent.com/Pandiora/hwinfo-remote/master/hwinfo-remote%40pandiora/files/hwinfo-remote%40pandiora/screenshots/hwrm-general.png)
