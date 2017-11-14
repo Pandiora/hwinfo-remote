@@ -1,4 +1,4 @@
-const uuid          = imports.applet.uuid;
+const uuid          = 'hwinfo-remote@pandiora';
 const AppletDir     = imports.ui.appletManager.applets[uuid];
 const Settings      = imports.ui.settings;
 const Applet        = imports.ui.applet;
@@ -15,8 +15,9 @@ const Lang          = imports.lang;
 const Util          = imports.misc.util;
 const GLib          = imports.gi.GLib;
 const Cairo         = imports.cairo;
+const Gettext       = AppletDir.Util._;
 
-const _             = imports.applet._;
+const _             = AppletDir.Util._;
 const _httpSession  = new Soup.SessionAsync();
 // ===========================================================
 
@@ -167,10 +168,10 @@ MyApplet.prototype = {
                         else { cmd = ((mac === "") || (mac === "00:00:00:00:00:00")) ? Main.notify("Mac is not set") : eth+mac }
                     } else if( txt === "reboot"){
                         if(this.rebootCommand !== ""){ cmd = this.rebootCommand; } 
-                        else { cmd = ((log == "%") || (eip === "")) ? Main.notify("Login-Credentials or Host-URL not set") : "pkexec sudo net rpc shutdown -r -t 0 -C 'Reboot requested by Remote-User' -U "+log+" -I "+eip; }
+                        else { cmd = ((log == "%") || (eip === "")) ? Main.notify("Login-Credentials or Host-URL not set") : "net rpc shutdown -r -t 0 -C 'Reboot requested by Remote-User' -U "+log+" -I "+eip; }
                     } else if( txt === "shutdown"){
                         if(this.shutdownCommand !== ""){ cmd = this.shutdownCommand; } 
-                        else { cmd = ((log == "%") || (eip === "")) ? Main.notify("Login-Credentials or Host-URL not set") : "pkexec sudo net rpc shutdown -f -t 0 -C 'Shutdown requested by Remote-User' -U "+log+" -I "+eip; }
+                        else { cmd = ((log == "%") || (eip === "")) ? Main.notify("Login-Credentials or Host-URL not set") : "net rpc shutdown -f -t 0 -C 'Shutdown requested by Remote-User' -U "+log+" -I "+eip; }
                     }
                 } else if(typ === "Linux"){
                     // ToDo: Implement commands for Linux
